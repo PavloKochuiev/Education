@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 5000px;
+}
+
+.general {
+    background-image: url(./images/bg.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form {
+    background-image: url(./images/bgpopup.png);
+    box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75);
+    position: fixed;
+    background-color: white;
+    padding: 50px 80px 60px 80px;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.button-close {
+    position: absolute;
+    background-image: url(./images/button-cross.png);
+    display: inline-block;
+    text-align: center;
+    border: none;
+    height: 19px;
+    width: 19px; 
+    right: -33px;
+    top: 9px;     
+    background-color: transparent;                 
+}
+
+.title {
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 211px;
+    height: 28px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.desc {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    height: 43px;
+    border: 2px solid #000101;
+}
+
+.input::placeholder {
+    color: #000000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: left;
+    padding-left: 17px;
+    text-transform: uppercase;
+}
+
+.input:focus {
+    color: #000000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: left;
+    padding-left: 17px;
+    text-transform: uppercase;
+}
+
+.input-field {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.login::after {
+    content: "";
+    position: absolute;
+    background-image: url(./images/icon-user.png);
+    display: inline-block;
+    text-align: center;
+    height: 13px;
+    width: 13px; 
+    right: 15px;
+    top: 50%;                       
+    transform: translate(0, -50%)
+}
+
+.password::after {
+    content: "";
+    position: absolute;
+    background-image: url(./images/icon-lock.png);
+    display: inline-block;
+    text-align: center;
+    height: 13px;
+    width: 13px; 
+    right: 15px;
+    top: 50%;                       
+    transform: translate(0, -50%)
+}
+
+.restore {
+    color: #000000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    display: inline-block;
+    float: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-left: 0;
+    margin-bottom: 18px;
+}
+
+.button {
+    width: 100%;
+    height: 43px;
+    color: #ffffff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,91 @@
+.nav {
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    padding: 20px;
+}
+
+.active {
+    color: red;
+}
+
+nav a:last-child {
+    margin-right: 0px;
+}
+
+nav a:first-child {
+    margin-left: 0px;
+}
+
+nav a {
+    color: green;
+    text-decoration-line: none;
+    margin: 10px
+}
+
+nav a:hover:not(#active) {
+    color: blue;
+}
+
+.movie-title {
+    color: red;
+    text-transform: uppercase;
+}
+
+.section-border {
+    border-width: 2px;
+    border-style: solid;
+    border-color: pink;
+}
+
+.movie-card {
+    border-width: 2px;
+    border-style: solid;
+    border-color: green;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.movie-card:last-child {
+    margin-bottom: 0px;
+}
+
+.movie-cover {
+    border-radius: 10px;
+}
+
+.rating-min {
+    color: yellow;
+}
+
+.rating-max {
+    color: green;
+}
+
+.movie-description {
+    font-weight: bold;
+}
+
+.hashtag {
+    color: black;
+    text-decoration-line: none;
+}
+
+.hashtag:nth-child(even) {
+    color: pink;
+}
+
+body {
+    margin:0px;
+    padding: 30px;
+}
+
+.about {
+    padding: 10px;
+}
+
+.movie-card:nth-last-child(2) div p:nth-child(2) {
+    background-color: pink;
+}
+
+

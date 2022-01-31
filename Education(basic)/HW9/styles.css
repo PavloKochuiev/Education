@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;    
+}
+
+.wrapper {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.general {
+    background-image: url(./images/bg.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-container {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.review {
+    font-family: 'Comfortaa', cursive;
+}
+
+.link {
+    font-family: 'Nunito', sans-serif;
+    align-self: flex-end;
+    font-size: 30px;
+    line-height: 33px;
+    color: black;
+}
+
+.title {
+    margin-bottom: 0;
+    margin-top: 100px;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+.review-cards-wrapper {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-cards {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.review-card {
+    width: 370px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 43px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.review-card:last-child {
+    margin-right: 0px;
+}
+
+.review-card-title {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #1E1E1E;
+    opacity: 0.8;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 37px;
+    margin-bottom: 15px;
+}
+
+.review-card-rating {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+
+}
+
+.review-card-rating:last-child {
+    margin-right: 0;
+}
+
+.review-card-desc {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E1E1E;
+    opacity: 0.8;
+    margin-top: 0px;
+    margin-bottom: 120px;
+}
+
+.review-card-time {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 43px;
+}
+
+.review-card-read-more {
+    opacity: 0.5;
+    color: black;
+    text-decoration: none;
+}
+
+.button {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10px;
+    width: 6px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #80A529;
+    position: absolute;
+    border: none;
+}
+
+.button-left {
+    background-image: url(./images/arrow-left.png);
+    top: 190px;
+    left: -75px;
+}
+
+.button-right {
+    background-image: url(./images/arrow-right.png);
+    top: 190px;
+    left: 1180px;
+}
+
+.feedback {
+    width: 370px;
+    height: 50px;
+    background: #80A529;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

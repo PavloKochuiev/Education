@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма добавления фильма</title>
+</head>
+<body>
+    <form action="https://fom.in.ua/echo" method="GET">
+        <label for="movie-title">
+            Название фильма
+        </label>
+        <hr>
+        <input id="movie-title" name="movie-title" type="text" placeholder="Введите название фильма" required>
+        <hr>
+        <label for="movie-cover">
+            Обложка фильма
+        </label>
+        <hr>
+        <input id="movie-cover" name="movie-cover" type="file">
+        <hr>
+        <label for="duration">
+            Введите продолжительность фильма (в часах и минутах)
+        </label>
+        <hr>
+        <input id="duration" type="number" placeholder="Часы" name="hours" min="0" max="5">
+        <input type="number" placeholder="Минуты" name="minutes" min="0" max="59" step="5">
+        <hr>
+        <label for="genre">
+            Выберите жанр(ы) фильма 
+        </label>
+        <hr>
+        Комедия
+        <input id="genre" name="genre" type="checkbox" value="comedy">
+        Триллер
+        <input name="genre" type="checkbox" value="thriller">
+        Драма    
+        <input name="genre" type="checkbox" value="drama">
+        Боевик       
+        <input name="genre" type="checkbox" value="action-movie">
+        Фантастика
+        <input name="genre" type="checkbox" value="fantasy">
+        <hr>
+        <label for="age">
+            Для какого возраста фильм
+        </label>
+        <hr>
+        от 0 до 10
+        <input id="age" name="age" type="radio" value="from0to10">
+        от 10 до 18
+        <input name="age" type="radio" value="from10to18">
+        18+
+        <input name="age" type="radio" value="18+">        
+        <hr>
+        <label for="wikipedia">
+            Вставьте ссылку на статью про фильм на wikipedia.org
+        </label>
+        <hr>
+        <input id="wikipedia" type="url" placeholder="Ссылка на Wiki" name="wikipedia" >
+        <hr>
+        <label for="release-date">
+            Выставите дату выхода фильма
+        </label>
+        <hr>
+        <input id="release-date" type="date" name="release-date">
+        <hr>
+        <label for="rating">
+            Выставите рейтинг фильма (от 1 до 10)
+        </label>
+        <hr>
+        <input id="rating" type="range" name="rating" min="0" max="10">
+        <hr>
+        <label for="preview">
+            Напишите превью к фильму
+        </label>
+        <input id="preview" type="text" placeholder="Превью" name="preview">
+        <hr>
+        <label for="language">Выберите язык</label>
+        <hr>
+        <select name="language" id="language">
+            <option value="ru">Русский</option>
+            <option value="ua">Украинский</option>
+            <option value="en">Английский</option>
+        </select>
+        <hr>
+        <input type="hidden" name="today" value="30-08-2021">
+        <button type="reset">
+            Сбросить форму
+        </button>
+        <button type="submit">  
+            Добавить фильм
+        </button>
+    </form>
+</body>
+</html>

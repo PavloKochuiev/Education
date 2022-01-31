@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Sign-in</title>
+</head>
+<body class="general">
+    <section>
+        <form class="form" action="https://fom.in.ua/echo" method="POST">
+            <button type="button"" class="button-close"></button>
+            <p class="title">
+                Личный кабинет
+            </p>
+            <p class="desc">
+                ВВедите пожалуйста свой логин и пароль
+            </p>
+            <div class="input-field login">
+                <input class="input" type="text" name="login" placeholder="логин">
+            </div> 
+            <div class="input-field password"> 
+                <input class="input" type="password" name="password" placeholder="пароль">
+            </div>
+            <a class="restore" href="">
+                Я забыл пароль!
+            </a>
+            <button class="button" type="submit">
+                Войти
+            </button>
+        </form>
+    </section>
+</body>
+</html>

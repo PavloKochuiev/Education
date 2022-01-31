@@ -1,0 +1,52 @@
+.nav {
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+.active {
+    color: red;
+}
+
+nav a {
+    color: green;
+    text-decoration-line: none;
+}
+
+.movie-title {
+    color: red;
+    text-transform: uppercase;
+}
+
+.section-border {
+    border-width: 2px;
+    border-style: solid;
+    border-color: pink;
+}
+
+.movie-card {
+    border-width: 2px;
+    border-style: solid;
+    border-color: green; 
+}
+
+.movie-cover {
+    border-radius: 10px;
+}
+
+.rating-min {
+    color: yellow;
+}
+
+.rating-max {
+    color: green;
+}
+
+.movie-description {
+    font-weight: bold;
+}
+
+.hashtag {
+    color: black;
+    text-decoration-line: none;
+}
