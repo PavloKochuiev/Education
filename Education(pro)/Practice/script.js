@@ -12,3 +12,15 @@ ObjectA.citizen = 'Ukraine';
 console.log(ObjectA);
 
 console.log(typeof ObjectA)
+
+// Проблема динамической типизации:
+
+function a() {
+    console.log('Brave New World')
+}
+
+a()
+
+a = 10
+
+console.log(a)
