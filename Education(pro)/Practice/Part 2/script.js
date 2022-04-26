@@ -101,3 +101,38 @@ if (Number.isNaN(year) === false) {
 } else {
     console.log("Error!");
 }
+
+
+
+// if, else, else if
+
+const country = "Ukraine";
+if (country === "Ukraine") {
+    console.log("You are in Ukraine");
+} else if (country === "USA") {
+    console.log("You are in USA");
+} else {
+    console.log("Dont know your country");
+}
+
+// Тернарный оператор 
+
+const numb = 15; 
+numb % 2 === 0 ? console.log("Even:") : console.log("Not Even:")
+
+
+
+// Циклы while, do / while, for 
+
+let r = 1; 
+while (r <= 100) {
+    console.log("r:", r);
+    r++;
+}
+
+let y = 101;
+do {
+    console.log("y:", y);
+} while (y <= 100)
+
+console.log("y after do / while:", y);
