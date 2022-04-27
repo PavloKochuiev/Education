@@ -134,5 +134,22 @@ let y = 101;
 do {
     console.log("y:", y);
 } while (y <= 100)
-
 console.log("y after do / while:", y);
+
+for (let u = 0; u <= 100; u++) {
+    console.log("U:", u)
+}
+
+for (let o = 0; o < 10; o++) {
+    console.log("o:", o);
+
+    for (let pat = 0; pat < 10; pat++) {
+        console.log("pat:", pat);
+    }
+}
+
+let count = 0;
+for (let aa = 1; aa <= 100; aa++) {
+    count = count + aa;
+}
+console.log("Count:", count);
