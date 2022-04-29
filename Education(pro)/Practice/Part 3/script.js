@@ -48,3 +48,23 @@ function calculateSquare(x, y) {
 
 const t = calculateSquare(10, 5);
 console.log("Square:", t);
+
+
+
+function main() {
+    const userName = prompt("Enter your name?");
+
+    if (userName === null || userName ==="") {
+        console.error("Invalid name");    
+        return;
+    }
+
+    const year = +prompt("Enter year:");
+
+    if (userName === null || userName === "") {
+        console.error("Invalid year");
+        return;
+    }
+
+    console.log("Name: " + userName, "Old:", 2022 - year)
+}
