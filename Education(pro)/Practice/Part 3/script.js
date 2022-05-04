@@ -54,8 +54,8 @@ console.log("Square:", t);
 function main() {
     const userName = prompt("Enter your name?");
 
-    if (userName === null || userName ==="") {
-        console.error("Invalid name");    
+    if (userName === null || userName === "") {
+        console.error("Invalid name");
         return;
     }
 
@@ -68,3 +68,24 @@ function main() {
 
     console.log("Name: " + userName, "Old:", 2022 - year)
 }
+
+
+
+// Стрелочная функция 
+
+const mult = (a, b) => {
+    return a * b;
+}
+
+function debugTest() {
+    const testName = "Test Testich";
+
+    for (let i = 0; i < 10; i++) {
+        console.log("Name" + testName + "I =" + i);
+    }
+
+    return testName;
+}
+
+const constForDebugTest = debugTest();
+console.log(constForDebugTest);
