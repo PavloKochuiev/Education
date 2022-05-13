@@ -8,6 +8,32 @@
 // sum(5) -> ф - ция возвращает результат 8
 // sum(20) -> ф - ция возвращает результат 28
 
+let sum = (function () {
+    let result = 0;
+
+    return function (x) {
+        result = result + x;
+
+        return result;
+    }
+})();
+
+console.log(sum(3));
+
+console.log(sum(5));
+
+console.log(sum(20));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
