@@ -34,11 +34,15 @@ console.log("Values:", values)
 
 const wrapper = document.querySelector(".wrapper");
 
-wrapper.innerHTML = "<a href='https://www.google.com.ua/?hl=ru'>Press Me</a>";
+// wrapper.innerHTML = "<a href='https://www.google.com.ua/?hl=ru'>Press Me</a>";
 
-const valuesWrapper = wrapper.innerHTML;
+// const valuesWrapper = wrapper.innerHTML;
 
-console.log(valuesWrapper);
+// console.log(valuesWrapper);
+
+
+
+ 
 
 
 
