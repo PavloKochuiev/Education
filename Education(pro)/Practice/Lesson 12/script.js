@@ -66,6 +66,7 @@ const buttonsData = [
 ]
 
 const container = document.createElement("div");
+container.className = "wrapper"; // добавляет класс в элемент
 
 const textElement = document.createElement("p");
 textElement.innerText = "Hello, World!";
@@ -89,3 +90,5 @@ function createButton(text, className) {
 
     return button;
 }
+
+// textElement.remove() // Правильный способ удаления элемента
