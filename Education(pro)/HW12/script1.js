@@ -13,6 +13,3 @@ let squares = document.querySelectorAll("div");
             this.innerText = ++this.innerText;
             console.log(this.innerText);
         }
-
-// Дано 5 квадратов. Каждый по клику меняет цвет (синий -> зеленый -> желтый)
-
