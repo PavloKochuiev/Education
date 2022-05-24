@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 150px;
+    }
+
+    form input:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+
+    form {
+        padding: 30px;
+        border: 1px solid blue;
+    }
+
+    form .buttons-container {
+        margin-top: 10px;
+    }
+
+    .invalid {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <form tabindex="-1">
+        <input type="text" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <div class="buttons-container">
+            <button type="submit" disabled>Send</button>
+        </div>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
