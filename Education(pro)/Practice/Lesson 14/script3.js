@@ -26,3 +26,10 @@ form.addEventListener("submit", event => {
 
     console.log({ email, password });
 })
+
+// Стандартный способ чтобы достать элементы: 
+
+// console.log({
+//     email: form.elements["email"].value,
+//     password: form.elements["password"].value
+// })
