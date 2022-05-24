@@ -29,6 +29,10 @@
             padding: 30px;
             border: 1px solid blue;
         }
+
+        form .buttons-container {
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -36,8 +40,13 @@
     <form tabindex="-1">
         <input type="text" name="email" placeholder="Email">
         <input type="password" name="password" placeholder="Password">
+        <div class="buttons-container">
+            <button type="submit">Send</button>
+            <button type="button" class="password-visibility" disabled>Show</button>
+        </div>
     </form>
-    <script src="./script2.js"></script>
+    <script defer src="./script2.js"></script>
+    <script defer src="./script3.js"></script>
 </body>
 
 </html>

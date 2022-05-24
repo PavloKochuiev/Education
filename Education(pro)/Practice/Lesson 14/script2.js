@@ -12,6 +12,10 @@ const eventTypes = [
     "focusin",
     "focusout",
     "input",
+    "change",
+    "cut",
+    "copy",
+    "paste"
 ]
 
 for (const input of inputs) {
