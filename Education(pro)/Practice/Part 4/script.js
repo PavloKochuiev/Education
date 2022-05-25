@@ -44,3 +44,7 @@ function calc(x, y, action) {
 }
 
 console.log(calc(10, 10, "/"))
+
+
+
+
