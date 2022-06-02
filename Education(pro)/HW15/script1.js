@@ -1,23 +1,10 @@
 "use strict";
 
-// Data
-// HTTP // HTTPS
-
-// GET => получение данных (например: дать список последних пяти новостей)
-// POST => отправка данных (например: отправка сообщения в чате)
-// PUT => редактирование сущности на стороне backend
-// DELETE => удаление сущности на стороне backend
-
-const API_URL = "https://rickandmortyapi.com/api/character?page=1";
-
-// XHR - XML HTTP REQUEST // старый способ
-// fetch - ES6 - Promise // новый способ, который все используют
-
 const loadButton = document.querySelector(".wrapper button");
 const content = document.querySelector(".wrapper .content");
 
 function renderList(items) {
-  const ul = document.createElement("ol");
+  const ul = document.createElement("ul");
 
   for (const item of items) {
     const listElement = document.createElement("li");
@@ -26,23 +13,23 @@ function renderList(items) {
     ul.appendChild(listElement);
   }
 
-  content.innerHTML = "";
   content.appendChild(ul);
 }
 
 function setButtonLoadingState() {
-  loadButton.textContent = "Loading...";
+  loadButton.textContent = "Getting data...";
   loadButton.disabled = true;
 }
 
 function setButtonInitialState() {
-  loadButton.textContent = "Load";
+  loadButton.textContent = "Get data";
   loadButton.disabled = false;
 }
 
+var clicks = 1;
 loadButton.addEventListener("click", () => {
   load({
-    url: API_URL,
+    url: `https://rickandmortyapi.com/api/character?page=${clicks}`,
     onLoadStart: setButtonInitialState,
     onLoadSuccess: (data) => {
       renderList(data.results);
@@ -52,7 +39,14 @@ loadButton.addEventListener("click", () => {
       alert("Error loading data!");
       setButtonInitialState();
     },
-  })
+  });
+  clicks += 1;
+  console.log("Clicks:", clicks, "Page:", clicks - 1);
+
+  if (clicks === 43) {
+    loadButton.textContent = "Disabled";
+    loadButton.disabled = true;
+  }
 });
 
 function load(props) {
