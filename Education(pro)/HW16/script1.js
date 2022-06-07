@@ -30,11 +30,10 @@ var clicks = 1;
 loadButton.addEventListener("click", () => {
   fetch(`https://rickandmortyapi.com/api/character?page=${clicks}`)
     .then((response) => response.json())
-    .then((pages) => renderList(pages.results))
+    .then((data) => renderList(data.results))
     .catch((error) => console.error("Catch:", error));
 
   clicks += 1;
-  console.log("Clicks:", clicks, "Page:", clicks - 1);
 
   if (clicks === 43) {
     loadButton.textContent = "Disabled";
