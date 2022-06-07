@@ -26,20 +26,13 @@ function setButtonInitialState() {
   loadButton.disabled = false;
 }
 
-
 var clicks = 1;
 loadButton.addEventListener("click", () => {
-  load({
-    onLoadStart: setButtonInitialState,
-    onLoadSuccess: (data) => {
-      renderList(data.results);
-      setButtonInitialState();
-    },
-    onLoadError: () => {
-      alert("Error loading data!");
-      setButtonInitialState();
-    },
-  });
+  fetch(`https://rickandmortyapi.com/api/character?page=${clicks}`)
+    .then((response) => response.json())
+    .then((pages) => renderList(pages.results))
+    .catch((error) => console.error("Catch:", error));
+
   clicks += 1;
   console.log("Clicks:", clicks, "Page:", clicks - 1);
 
@@ -48,34 +41,3 @@ loadButton.addEventListener("click", () => {
     loadButton.disabled = true;
   }
 });
-
-function load(props) {
-  const xhr = new XMLHttpRequest(); // создаем новый объект-запрос
-  xhr.responseType = "json"; // можем указать response type для того чтобы сразу получить json
-
-  xhr.onload = function () {
-    // должны подписаться на событие onload и проверить статус
-    if (xhr.status === 200) {
-      props.onLoadSuccess(xhr.response);
-    } else {
-      props.onLoadError();
-    }
-  };
-
-  xhr.onerror = props.onLoadError;
-
-  xhr.open("GET", props.url); // необходимо открыть запрос
-  xhr.send(); // необходимо вызвать send
-}
-
-
-function load() {
-  const API_URL = `https://rickandmortyapi.com/api/character?page=${clicks}`;
-  const data = fetch(API_URL)
-    .then((response) => response.json())
-    .then((data) => console.log("data", data))
-}
-
-
-
-
