@@ -1,0 +1,24 @@
+.clock {
+    font-size: 60px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hour {
+    background: blue;
+}
+
+.min {
+    background: yellow;
+}
+
+.sec {
+    background: green;
+}
