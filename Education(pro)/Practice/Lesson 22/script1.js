@@ -1,14 +1,14 @@
 "use strict";
 
-// ООП 
-// Инкапсуляция / Наследование / Полиморфизм 
+// ООП
+// Инкапсуляция / Наследование / Полиморфизм
 
 const user = {
     name: "Dima",
     walk() {
         console.log("I am walking", this);
-    }
-}
+    },
+};
 
 // Прототип = ссылка на родителя
 const developer = {
@@ -16,7 +16,7 @@ const developer = {
     // Прототип - object
     writeCode() {
         console.log("Coding...", this);
-    }
+    },
 };
 
 developer.__proto__ = user;
@@ -25,8 +25,8 @@ const manager = {
     teams: ["FrontEnd", "Design"],
     talkToCustomer() {
         console.log("Meeting...");
-    }
-}
+    },
+};
 
 manager.__proto__ = developer;
 
@@ -37,11 +37,16 @@ manager.__proto__ = developer;
 // developer.walk();
 // developer.writeCode();
 
-
-
 // List -> characters
 // Data to display
 // Load more
 
 // List -> episodes
 
+for (const key in manager) {
+    if (manager.hasOwnProperty(key)) {
+        console.log(key);
+    }
+}
+
+Object.keys(manager);
