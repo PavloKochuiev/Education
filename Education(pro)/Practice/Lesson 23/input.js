@@ -13,9 +13,8 @@ class Input {
     }
 
     onChange(callback) {
-        this.#element.addEventListener("input", (event) => {
-            const isEmpty = event.target.value === "";
-            callback(isEmpty);
+        this.#element.addEventListener("input", event => {
+            callback(event.target.value);
         });
     }
 
